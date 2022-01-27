@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <Navigation />
-      {!auth.isLoggedIn && <LoginForm />}
-      {auth.isLoggedIn &&
+      {!auth.userInfo && <LoginForm />}
+      {auth.userInfo &&
         <div style={{fontSize: "20px", textAlign:"center", margin:"50px"}}>
           Chào mừng {auth.userInfo} quay trở lại.
         </div>

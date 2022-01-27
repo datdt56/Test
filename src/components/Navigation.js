@@ -28,7 +28,7 @@ const Navigation = () => {
             <div className="header" style={{display:'inline-block', height:'100%'}}>
                 <img alt="logo" src="/logo.png" height="70px"/>
             </div>
-            {auth.isLoggedIn &&
+            {auth.userInfo &&
                 <ul>
                     <li onClick={auth.logout}>Log Out</li>
                 </ul>
